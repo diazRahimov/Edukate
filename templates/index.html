@@ -1,4 +1,3 @@
-
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -11,8 +10,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="{% static 'img/favicon.ico' %}" rel="icon">
-
+    <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,8 +20,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
-
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -35,9 +32,9 @@
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+(94) 581 33 03</small>
+                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
                     <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>rahimovshohjahon69@gmail.com</small>
+                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
@@ -61,8 +58,8 @@
             </div>
         </div>
     </div>
-
     <!-- Topbar End -->
+
 
     <!-- Navbar Start -->
     <div class="container-fluid p-0">
@@ -75,9 +72,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mx-auto py-0">
-                    <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
-                    <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
-                    <a href="{% url 'course_list' %}" class="nav-item nav-link">Courses</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="/courses/" class="nav-item nav-link">Courses</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
@@ -87,7 +84,7 @@
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         </div>
                     </div>
-                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
             </div>
@@ -232,7 +229,7 @@
         </div>
         <div class="owl-carousel courses-carousel">
             <div class="courses-item position-relative">
-                <img class="img-fluid" src="{% static "img/courses-1.jpg" %}" alt="">
+                <img class="img-fluid" src="{% static 'img/courses-1.jpg' %}" alt="">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
                     <div class="border-top w-100 mt-3">
@@ -247,7 +244,7 @@
                 </div>
             </div>
             <div class="courses-item position-relative">
-                <img class="img-fluid" src="{% static "img/courses-2.jpg" %}" alt="">
+                <img class="img-fluid" src="{% static 'img/courses-2.jpg' %}" alt="">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
                     <div class="border-top w-100 mt-3">
@@ -262,7 +259,7 @@
                 </div>
             </div>
             <div class="courses-item position-relative">
-                <img class="img-fluid" src="{% static "img/courses-3.jpg" %}" alt="">
+                <img class="img-fluid" src="{% static 'img/courses-3.jpg' %}"alt="">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
                     <div class="border-top w-100 mt-3">
@@ -277,7 +274,7 @@
                 </div>
             </div>
             <div class="courses-item position-relative">
-                <img class="img-fluid" src="{% static "img/courses-4.jpg" %}" alt="">
+                <img class="img-fluid" src="{% static 'img/courses-4.jpg' %}" alt="">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
                     <div class="border-top w-100 mt-3">
@@ -292,7 +289,7 @@
                 </div>
             </div>
             <div class="courses-item position-relative">
-                <img class="img-fluid" src="{% static "img/courses-5.jpg" %}" alt="">
+                <img class="img-fluid" src="{% static 'img/courses-5.jpg' %}" alt="">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
                     <div class="border-top w-100 mt-3">
@@ -307,7 +304,7 @@
                 </div>
             </div>
             <div class="courses-item position-relative">
-                <img class="img-fluid" src="{% static "img/courses-6.jpg" %}" alt="">
+                <img class="img-fluid" src="{% static 'img/courses-6.jpg' %}" alt="">
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
                     <div class="border-top w-100 mt-3">
@@ -371,7 +368,7 @@
             </div>
             <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="{% static "img/team-1.jpg" %}" alt="">
+                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
                     <div class="bg-light text-center p-4">
                         <h5 class="mb-3">Instructor Name</h5>
                         <p class="mb-2">Web Design & Development</p>
@@ -385,7 +382,7 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="{% static "img/team-2.jpg" %}" alt="">
+                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
                     <div class="bg-light text-center p-4">
                         <h5 class="mb-3">Instructor Name</h5>
                         <p class="mb-2">Web Design & Development</p>
@@ -399,7 +396,7 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="{% static "img/team-3.jpg" %}" alt="">
+                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
                     <div class="bg-light text-center p-4">
                         <h5 class="mb-3">Instructor Name</h5>
                         <p class="mb-2">Web Design & Development</p>
@@ -413,7 +410,7 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="{% static "img/team-4.jpg" %}" alt="">
+                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
                     <div class="bg-light text-center p-4">
                         <h5 class="mb-3">Instructor Name</h5>
                         <p class="mb-2">Web Design & Development</p>
@@ -449,7 +446,7 @@
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <p>Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
                             <div class="d-flex flex-shrink-0 align-items-center mt-4">
-                                <img class="img-fluid mr-4" src="{% static "img/testimonial-2.jpg" %}" alt="">
+                                <img class="img-fluid mr-4" src="img/testimonial-2.jpg" alt="">
                                 <div>
                                     <h5>Student Name</h5>
                                     <span>Web Design</span>
@@ -460,7 +457,7 @@
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <p>Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
                             <div class="d-flex flex-shrink-0 align-items-center mt-4">
-                                <img class="img-fluid mr-4" src="{% static "img/testimonial-1.jpg" %}" alt="">
+                                <img class="img-fluid mr-4" src="img/testimonial-1.jpg" alt="">
                                 <div>
                                     <h5>Student Name</h5>
                                     <span>Web Design</span>
@@ -634,5 +631,3 @@
 </body>
 
 </html>
-
-
