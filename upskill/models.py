@@ -108,6 +108,3 @@ class Video(ItemBase):
 class Image(ItemBase):
     image = models.ImageField(upload_to='images')
 
-
-
-

@@ -20,34 +20,3 @@ class CourseDetailView(DetailView):
         context = super().get_context_data(**kwargs)
         context['related_courses'] = Course.objects.exclude(pk=self.object.pk)[:3]
         return context
-    
-
-
-# from django.shortcuts import render, get_object_or_404
-# from .models import Course
-# # Create your views here.
-
-
-# def index(request):
-#     return render(request, 'index.html')
-
-
-
-# def course_list(request):
-#     courses = Course.objects.select_related('owner', 'subject').all()
-#     return render(request, 'course.html', {'courses': courses})
-    
-
-# def course_detail(request, pk):
-#     course =  get_object_or_404(Course, pk = pk)
-#     return render(request, 'detail.html', {'course': course})
-
-# def home(request):
-#     return render(request, 'home.html')
-
-# def about(request):
-#     return render(request, 'about.html')
-
-# def contact(request):
-#     return render(request, 'contact.html')
-
