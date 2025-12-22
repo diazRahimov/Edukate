@@ -5,17 +5,42 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-md-6 text-center">
 
             <h2 class="mb-4">Login</h2>
-            <p class="mb-4">Sign in via Google account</p>
+            <p class="mb-4">Sign in using social accounts</p>
 
+            <!-- Google -->
             <a href="{% provider_login_url 'google' %}"
-               class="btn btn-primary btn-lg text-white">
-                <i class="fab fa-google mr-2"></i> sign in via Google account
+               class="btn btn-danger btn-lg text-white mb-3 w-100">
+                <i class="fab fa-google me-2"></i> Sign in with Google
             </a>
+
+            <!-- GitHub -->
+            <a href="{% provider_login_url 'github' %}"
+               class="btn btn-dark btn-lg text-white mb-3 w-100">
+                <i class="fab fa-github me-2"></i> Sign in with GitHub
+            </a>
+
+            <!-- Facebook -->
+            <a href="#"
+               class="btn btn-primary btn-lg text-white mb-3 w-100">
+                <i class="fab fa-facebook me-2"></i> Sign in with Facebook
+            </a>
+
+            <!-- Twitter -->
+            <a href="#"
+               class="btn btn-info btn-lg text-white w-100">
+                <i class="fab fa-twitter me-2"></i> Sign in with Twitter
+            </a>
+            
+            <p class="signup-link">
+                Don't have account?
+                <a href="{% url 'account_signup' %}">Sign in</a>
+            </p>
 
         </div>
     </div>

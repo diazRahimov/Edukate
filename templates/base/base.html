@@ -94,10 +94,9 @@
                                 </div>
                             </div>
                         {% else %}
-                            {% load socialaccount %}
-                            <a href="{% provider_login_url 'google' %}" class="btn btn-primary text-white px-4 ml-lg-3" style="border-radius: 0; line-height: 40px;">
-                                <i class="fab fa-google mr-2"></i> Login
-                            </a>
+                        <a href="{% url 'account_login' %}" class="btn btn-primary text-white px-4 ml-lg-3" style="border-radius: 0; line-height: 40px;">
+                            <i class="fas fa-sign-in-alt mr-2"></i>Login
+                        </a>
                         {% endif %}
                     </div>
                 </div>
