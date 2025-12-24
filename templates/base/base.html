@@ -29,18 +29,18 @@
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+                    <small><i class="fa fa-phone-alt mr-2"></i>+998 (94) 581 33 03</small>
                     <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
+                    <small><i class="fa fa-envelope mr-2"></i>rahimovshohjahon69@gmail.com</small>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="text-white px-2" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="text-white px-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="text-white px-2" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="text-white pl-2" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="text-white px-2" href="https://www.facebook.com/profile.php?id=100077013240618"><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-white px-2" href="https://x.com/ssup_diazz"><i class="fab fa-twitter"></i></a>
+                    <a class="text-white px-2" href="https://t.me/bigbalddhead"><i class="fab fa-telegram"></i></a>
+                    <a class="text-white px-2" href="https://www.instagram.com/diaz.inn/"><i class="fab fa-instagram"></i></a>
+                    <a class="text-white pl-2" href="https://www.youtube.com/@ThinkMotion.studios"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mx-auto py-0">
                     <a href="{% url 'index' %}" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About</a>
+                    <a href="{% url "about" %}" class="nav-item nav-link">About</a>
                     <a href="{% url 'course_list' %}" class="nav-item nav-link">Courses</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -77,7 +77,7 @@
                             {% endfor %}
                         </div>
                     </div>
-                    <a href="#" class="nav-item nav-link">Contact</a>
+                    <a href="{% url "contact" %}" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
@@ -87,7 +87,7 @@
                         {% if user.is_authenticated %}
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-user mr-1"></i> {{ user.username }}
+                                    <i class="fa fa-user mr-1"></i> {{ user.display_name }}
                                 </a>
                                 <div class="dropdown-menu m-0">
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">Log out</a>
@@ -118,7 +118,10 @@
                     <a href="{% url 'index' %}" class="navbar-brand">
                         <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>Edukate</h1>
                     </a>
-                    <p class="m-0">Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem at et diam est, tempor rebum ipsum sit ea tempor stet et consetetur dolores.</p>
+                    <p class="m-0">Edukate is your gateway to modern learning.
+                                   Study anytime, anywhere at your own pace.
+                                   Gain practical skills from expert instructors.
+                                   Build a future you can be proud of.</p>
                 </div>
                 <div class="col-md-6 mb-5">
                     <h3 class="text-white mb-4">Newsletter</h3>
@@ -140,7 +143,7 @@
                         <p class="m-0">Copyright &copy; <a class="text-white" href="#">Your Site Name</a>. All Rights Reserved.</p>
                     </div>
                     <div class="col-md-6 text-center text-md-right">
-                        <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a></p>
+                        <p class="m-0">Designed by <a class="text-white" href="https://t.me/bigbalddhead">Shohjahon</a></p>
                     </div>
                 </div>
             </div>

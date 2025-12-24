@@ -9852,6 +9852,9 @@ h6,
 .courses-list-item img {
   position: relative;
   transition: .5s;
+  width: 100%;        
+  height: 250px;      
+  object-fit: cover;  
 }
 
 .courses-item .courses-text,
@@ -9960,169 +9963,40 @@ h6,
 }
 
 
-/* =========================
-   SOCIAL LOGIN STYLES
-========================= */
-
-.social-login-card {
-    background: #ffffff;
-    border-radius: 18px;
-    padding: 40px 30px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-    text-align: center;
-    animation: fadeInUp 0.6s ease;
+/* Course card */
+.courses-item {
+  height: 420px;               /* HAMMASI BIR XIL */
+  overflow: hidden;
+  position: relative;
 }
 
-.social-login-card img {
-    width: 60px;
-    margin-bottom: 20px;
+/* Image wrapper */
+.course-image-wrapper {
+  width: 100%;
+  height: 100%;
 }
 
-.social-login-card h3 {
-    font-weight: 700;
-    margin-bottom: 10px;
+/* Image itself */
+.course-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* ⭐ MUAMMONI HAL QILADI */
+  display: block;
 }
 
-.social-login-card p {
-    color: #6c757d;
-    margin-bottom: 25px;
+/* Overlay text */
+.courses-item .courses-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(18, 15, 45, 0),
+      rgba(18, 15, 45, 0.95)
+  );
+  z-index: 2;
 }
 
-.social-login-btn {
-    font-size: 18px;
-    padding: 14px;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
-
-.social-login-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* signup.css - Dark + Online Courses Style */
-
-/* Body & background */
-body {
-    background: url('/static/images/online-courses-bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #e0e0e0;
-}
-
-/* Overlay for better readability */
-.container::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(15, 15, 25, 0.75);
-    z-index: -1;
-}
-
-/* Card style */
-.social-login-card {
-    background: rgba(25, 25, 35, 0.95);
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-    padding: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social-login-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.8);
-}
-
-/* Headings */
-.social-login-card h2 {
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.social-login-card p {
-    color: #cccccc;
-}
-
-/* Form fields */
-input, select, textarea {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #ffffff;
-    border-radius: 10px;
-    padding: 10px 15px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-input:focus, select:focus, textarea:focus {
-    outline: none;
-    border-color: #20c997;
-    box-shadow: 0 0 10px rgba(32, 201, 151, 0.6);
-}
-
-/* Buttons */
-.btn {
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.btn-success {
-    background: linear-gradient(45deg, #20c997, #28a745);
-    border: none;
-    color: #fff;
-}
-
-.btn-success:hover {
-    background: linear-gradient(45deg, #28a745, #20c997);
-    transform: scale(1.05);
-}
-
-.btn-danger {
-    background: linear-gradient(45deg, #ea4335, #dd4b39);
-    border: none;
-    color: #fff;
-}
-
-.btn-danger:hover {
-    background: linear-gradient(45deg, #dd4b39, #ea4335);
-    transform: scale(1.05);
-}
-
-/* Social button icon */
-.social-login-btn i {
-    font-size: 18px;
-    vertical-align: middle;
-}
-
-/* Signup link */
-.signup-link a {
-    color: #20c997;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.signup-link a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive adjustments */
-@media (max-width: 576px) {
-    .social-login-card {
-        padding: 30px 20px;
-    }
-}
