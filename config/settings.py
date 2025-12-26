@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%$nhy(=dkf07h9#_epco7nud@ka8)%#^&pt6=l3vo)$2yawzve'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 AUTH_USER_MODEL = 'upskill.CustomUser'
@@ -55,7 +55,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["51.20.77.70", "localhost"]
 
 
 SITE_ID = 1
